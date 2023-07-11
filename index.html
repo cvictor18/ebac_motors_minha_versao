@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EBAC Motors</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- CDN para utilizar as fontes do google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- CDN para utilizar os ícones do google -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- CDN para utilizar o Plugin Slick do Jquery -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h1>EBAC Motors</h1>
+            <label for="hamburguer"><i class="material-icons">menu</i></label>
+            <input type="checkbox" name="" id="hamburguer">
+        </div>
+    </header>
+    <nav>
+        <div class="nav">
+            <a href="#sobre"><h3>SOBRE</h3></a>
+            <a href="#destaque"><h3>EM DESTAQUE</h3></a>
+            <a href="#promocoes"><h3>PROMOÇÕES</h3></a>
+            <a href="#contato"><h3>CONTATO</h3></a>   
+        </div>
+    </nav>
+    <div id="carousel">
+        <img src="./images/slide1.png" alt="Carroda Porsche">
+        <img src="./images/slide2.png" alt="Carroda BMW">
+        <img src="./images/slide3.png" alt="Carroda Ford">
+    </div>
+    <section id="sobre">
+        <img src="./images/loja.jpg" alt="">
+        <article>
+            <h3>Sobre a EBAC Motors</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ratione praesentium sapiente odio mollitia unde, vero at voluptatum. Tempora eos tenetur ullam porro animi. Vitae natus fuga atque cumque sapiente.</p>
+        </article>
+    </section>
+    <section id="destaque">
+        <h3>Em destaque</h3>
+        <div class="destaque">
+            <article>
+                <img src="./images/fusca.png" alt="Fusca Bege">
+                <h4>VW Fusca</h4>
+                <p>Ótimo estado de conservação</p>
+                <p><strong>R$ 75.000,00</strong></p>
+                <a href="#contato" id="fusca">Tenho Interesse</a>
+            </article>
+            <article>
+                <img src="./images/moto-bmw.png" alt="Moto BMW Azul">
+                <h4>Moto BMW</h4>
+                <p>Moto XPTO cilindradas</p>
+                <p><strong>R$ 75.000,00</strong></p>
+                <a href="#contato" id="moto">Tenho Interesse</a>
+            </article>
+            <article>
+                <img src="./images/carro-bmw.png" alt="Carro BMW Chumbo">
+                <h4>Carro BMW</h4>
+                <p>Câmbio automático, 4 portas, vidros e travas elétricas</p>
+                <p><strong>R$ 75.000,00</strong></p>
+                <a href="#contato" id="carro">Tenho Interesse</a>
+            </article>
+        </div>
+    </section>
+    <section id="promocoes">
+        <h3>Promoções</h3>
+        <div class="promocoes">
+            <article>
+                <img src="./images/fusca.png" alt="Fusca Bege">
+                <h4>VW Fusca</h4>
+                <p>Ótimo estado de conservação</p>
+                <p><small>R$ 75.000,00</small> <strong>R$ 55.000,00</strong></p>
+                <a href="#contato" id="fusca">Tenho Interesse</a>
+            </article>
+            <article>
+                <img src="./images/moto-bmw.png" alt="Moto BMW Azul">
+                <h4>Moto BMW</h4>
+                <p>Moto XPTO cilindradas</p>
+                <p><small>R$ 75.000,00</small> <strong>R$ 55.000,00</strong></p>
+                <a href="#contato" id="moto">Tenho Interesse</a>
+            </article>
+            <article>
+                <img src="./images/carro-bmw.png" alt="Carro BMW Chumbo">
+                <h4>Carro BMW</h4>
+                <p>Câmbio automático, 4 portas, vidros e travas elétricas</p>
+                <p><small>R$ 75.000,00</small> <strong>R$ 55.000,00</strong></p>
+                <a href="#contato" id="carro">Tenho Interesse</a>
+            </article>
+        </div>
+    </section>
+    <section id="contato">
+        <h3>Entre em contato</h3>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome">
+            <label for="tel">Telefone:</label>
+            <input type="tel" name="tel" id="tel" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" title="xx xxxxx-xxxx">
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" title="email@.com">
+            <label for="interesse">Veículo de interesse:</label>
+            <input type="text" id="interesse">
+            <label for="textarea">Mensagem:</label>
+            <textarea name="textarea" id="textarea" cols="30" rows="5"></textarea>
+            <button type="submit">Enviar</button>    
+        </form>
+    </section>
+    <footer>
+        <div class="footer">
+            <p>2022 &copy; EBAC Motors - Todos os direitos reservados</p>
+            <div class="imagens">
+                <img src="./icones/facebook.png" alt="Ícone Facebook">
+                <img src="./icones/instagram.png" alt="Ícone Instagram">
+                <img src="./icones/youtube.png" alt="Ícone YouTube">        
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
